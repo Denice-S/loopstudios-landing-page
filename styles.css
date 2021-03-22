@@ -48,7 +48,7 @@ body{
 }
 
 .active {
-    margin-left:5em;
+    margin-left:2.5em;
     background-color: transparent;
     color: white;
 }
@@ -82,16 +82,16 @@ main{
 .hero h2{
 position:absolute;
 text-transform:uppercase;
-width:40%;
+width:45%;
 color:white;
 font-size:4.5em;
 font-weight:100;
-letter-spacing: 0.1em;
+letter-spacing: 0.05em;
 padding:0.5em;
 line-height:1em;
 border: 1px solid white;
-bottom: 2.5em;
-left: 4em;
+bottom: 0.8em;
+left: 2em;
 z-index:1;
 }
 
@@ -203,7 +203,7 @@ z-index:1;
     width:50%;
     font-size:2em;
     font-weight:600;
-    /* padding:0.5em 2em; */
+   
     margin:0;
    
   }
@@ -216,13 +216,12 @@ z-index:1;
   align-items:flex-end;
   justify-content:flex-end;
   width:50%;
-  /* padding:2em 8em; */
+
 }
 
 .copyright span{
   display:inline-block;
-  text-align:right;
-  /* padding:1em; */
+
   width:100%;
 }
 .copyright i{
@@ -240,7 +239,7 @@ z-index:1;
     color:white;
   }
   
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+ 
   @media screen and (max-width: 600px) {
      .links{
       display:flex;
@@ -281,10 +280,7 @@ z-index:1;
      align-self:flex-start;
      padding:0.6em;
     }
-    /* .topnav.responsive .active{
-      display: block;
-      align-self:flex-start;
-    } */
+  
     .topnav.responsive .dropdown {float: none;}
     .topnav.responsive .dropdown-content {position: relative;}
     .topnav.responsive .dropdown .dropbtn {
