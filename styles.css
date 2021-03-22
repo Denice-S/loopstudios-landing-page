@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
 
+:root {
+  --White: hsl(0, 0%, 100%);
+--Black: hsl(0, 0%, 0%);
+--Dark-Gray: hsl(0, 0%, 55%);
+--Very-Dark-Gray: hsl(0, 0%, 41%);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -41,7 +48,7 @@ body{
 }
 .topnav a {
   display: block;
-  color: #f2f2f2;
+  color: var(--White);
  padding: 1em 1em; 
   text-decoration: none;
   font-size: 1.5em;
@@ -50,7 +57,7 @@ body{
 .active {
     margin-left:2.5em;
     background-color: transparent;
-    color: white;
+    color: var(--White);
 }
   
  
@@ -83,13 +90,13 @@ main{
 position:absolute;
 text-transform:uppercase;
 width:45%;
-color:white;
+color:var(--White);
 font-size:4.5em;
 font-weight:100;
 letter-spacing: 0.05em;
 padding:0.5em;
 line-height:1em;
-border: 1px solid white;
+border:0.062em solid var(--White);
 bottom: 0.8em;
 left: 2em;
 z-index:1;
@@ -98,7 +105,6 @@ z-index:1;
 .introduction{
   display:flex;
   flex-wrap:wrap;
-  /* padding:5em; */
   margin:8em;
 }
 .introduction img{
@@ -107,14 +113,16 @@ z-index:1;
 .intro-text {
   width:50%;
   height:80%;
-  font-size:1.9em;
-  text-align:center;
-  border:1px solid white;
-  background:white;
- 
-  transform: translate(-195px,200px);
+  font-size:1.6em;
+  padding:1em 2.5em;
+  text-align:left;
+  color:var(--Very-Dark-Gray);
+  border:0.062solid var(--White);
+  background:var(--White);
+  transform: translate(-12.18em,10.62em);
 }
 .intro-text h2{
+  color:var(--Black);
   text-transform: uppercase;
 }
 
@@ -141,9 +149,9 @@ z-index:1;
   padding:1em;
   font-size:2em;
   position:absolute;
-  bottom: 0.5em;
-  left: 0.2em;
-  color:white;
+  bottom: 1.3em;
+  left: 0.5em;
+  color:var(--White);
 }
 
 #creations-header{
@@ -181,13 +189,13 @@ z-index:1;
    display:flex;
    flex-wrap:wrap;
    width:100%;
-   background-color:black;
-   color:white;
+   background-color:var(--Black);
+   color:var(--White);
    padding:2em 8em;
 
  }
 .footer-links {
-  margin:0.8em;
+  margin:1em;
   display:flex;
   flex-wrap:wrap;
   width:50%;
@@ -196,7 +204,7 @@ z-index:1;
   text-decoration:none;
   font-size:1.5em;
   padding:0.2em;
-  color:white;
+  color:var(--White);
 }
 
 .footer-logo{
@@ -221,26 +229,28 @@ z-index:1;
 
 .copyright span{
   display:inline-block;
-
+  text-align:right;
+  color:var(--Dark-Gray);
   width:100%;
 }
 .copyright i{
-  padding:0.1em;
+  padding:0.2em;
   text-align:center;
 }
  
 .attribution {
   width:100%;
-    font-size: 11px;
+  color:var(--Dark-Gray);
+    font-size: 0.7em;
     text-align: center;
   }
 
 .attribution a {
-    color:white;
+    color:var(--White);
   }
   
  
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 37.5em) {
      .links{
       display:flex;
       margin:0;
@@ -267,7 +277,7 @@ z-index:1;
       flex-direction:column;
       align-items:flex-start;
       text-align:left;
-      background-color:black;
+      background-color:var(--Black);
     }
     .topnav.responsive a.icon {
       position: absolute;
@@ -275,7 +285,6 @@ z-index:1;
       top: 0;
     }
     .topnav.responsive a {
-      /* float: none; */
       display: block;
      align-self:flex-start;
      padding:0.6em;
@@ -294,17 +303,18 @@ z-index:1;
   }
   .hero{
     justify-content: center;
+    margin-bottom:3em;
   }
   .hero h2{
     position:absolute;
     text-transform:uppercase;
-    width:90%;
-    color:white;
-    font-size:1.5em;
+    width:80%;
+    color:var(--White);
+    font-size:1.8em;
     padding:0.5em;
     line-height:1.5em;
-    bottom: 5em;
-    left: 0.5em;
+    bottom: 8.5em;
+    left: 0.8em;
  
     }
 
@@ -318,8 +328,9 @@ z-index:1;
   .intro-text{
     width:100%;
     height:auto;
+    padding:1em;
     transform:translate(0,0);
-    font-size:1.5em;
+    font-size:1.4em;
     
   }
   .creations{
@@ -333,17 +344,22 @@ z-index:1;
     height:auto;
     padding:0.5em;
   }
-  #creations-header{
+ #creations-header{
+   
     width:100%;
     height:auto;
-    padding:0.5em;
-    justify-content:center;
-    text-align:center;
+    padding:0.5em; 
+     justify-content:center;
+    align-items: center;
+    text-align:center; 
   }
   #creations-header h4{
+    position:relative;
+    bottom:0;
+    left:0;
     text-align:center;
-    margin:auto;
-    font-size:1em;
+    align-self:center;
+    font-size:1.6em;
     order:0;
   }
   #button{
@@ -366,7 +382,7 @@ z-index:1;
     position:absolute;
     bottom: 0.5em;;
     left: 0.5em;;
-    color:white;
+    color:var(--White);
   }
   
   .hero img{
@@ -435,6 +451,7 @@ z-index:1;
   }
   .footer-logo{
     width:100%;
+    font-size:1.5em;
     text-align:center;
     padding:0.5em;
     margin:0;
@@ -457,6 +474,7 @@ z-index:1;
    text-align:center;
  }
  .footer-links{
+   font-size:0.8em;
    width:100%;
    padding:0.1em;
    margin:0;
