@@ -1,8 +1,6 @@
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
+const navbar = document.getElementById("myTopnav");
+
+navbar.addEventListener("click", () => {
+    (navbar.className === "topnav") ? navbar.className += " responsive" : navbar.className = "topnav";
+})
+
