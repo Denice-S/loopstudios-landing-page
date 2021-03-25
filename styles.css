@@ -515,15 +515,10 @@ font-size:0.5em;
     margin-bottom:3em;
   }
   .hero h2{
-    /* position:absolute; */
-    text-transform:uppercase;
-    /* width:60%; */
     color:var(--White);
     font-size:2em;
     padding:0.5em;
     line-height:1.5em;
-  
- 
     }
 
   .introduction{
@@ -577,9 +572,7 @@ margin-bottom:3em;
     padding:1em;
     width:100%;
   } 
-   .footer-logo{
-
-  }
+  
   .copyright{  
    font-size:0.5em;
  } 
