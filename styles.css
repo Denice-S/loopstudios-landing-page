@@ -86,7 +86,7 @@ main{
   z-index:0;
 
 }
-.hero h2{
+.hero h1{
 position:absolute;
 text-transform:uppercase;
 width:45%;
@@ -158,7 +158,7 @@ z-index:1;
   display:flex;
   width:50%;
 }
-#creations-header h4{
+#creations-header h3{
   position:absolute;
   bottom:1.5em;;
   left:0;
@@ -307,7 +307,7 @@ z-index:1;
     margin-bottom:2em;
 
   }
-  .hero h2{
+  .hero h1{
     width:70%;
     margin:1em;
     position:absolute;
@@ -353,7 +353,7 @@ z-index:1;
     align-items: center;
     text-align:center; 
   }
-  #creations-header h4{
+  #creations-header h3{
     position:relative;
     bottom:0;
     left:0;
@@ -489,7 +489,7 @@ z-index:1;
  }
   }
 
-@media screen and (max-width: 48em){
+/* @media screen and (max-width: 48em){
   .links{
       display:flex;
 font-size:0.5em;
@@ -589,5 +589,5 @@ margin-bottom:3em;
 
 
   
-
+ */
 
